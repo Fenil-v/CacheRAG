@@ -1,0 +1,89 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Data & Artifacts
+# =========================
+data/processed/
+data/index/
+data/cache/
+data/tmp/
+
+# Large raw corpora (keep only small curated docs)
+data/raw/**/*
+!data/raw/perf/**/*.md
+!data/raw/nsight/**/*.md
+
+# =========================
+# Profiling Outputs
+# =========================
+profiling/
+*.perf
+*.data
+*.nsys-rep
+*.nsys
+*.qdrep
+*.trace
+*.csv
+*.jsonl
+
+# =========================
+# Benchmarks / Experiments
+# =========================
+experiments/*.json
+!experiments/bench_baseline.json
+!experiments/build_stats.json
+
+# =========================
+# C++ / Build Artifacts
+# =========================
+cpp/build/
+cpp/*.so
+cpp/*.dylib
+cpp/*.dll
+*.o
+*.a
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Jupyter / Kaggle
+# =========================
+.ipynb_checkpoints/
+kaggle.json
+
+# =========================
+# Docker (optional later)
+# =========================
+*.tar
